@@ -11,7 +11,7 @@ import org.springframework.data.annotation.PersistenceConstructor;
 @Table(name = "car")
 public class Car {
     @Id
-    @Column(name = "idChassi")
+    @Column(name = "id_Chassi")
     private long idChassi;
 
     @Column(name = "name")
@@ -25,7 +25,7 @@ public class Car {
     private String color;
 
 
-    @Column(name = "fabricationYear")
+    @Column(name = "fabrication_Year")
     private String fabricationYear;
 
     @PersistenceConstructor
