@@ -27,5 +27,9 @@ public class Car {
 
     @Column(name = "fabrication_Year",nullable = false)
     private String fabricationYear;
+
+    public Car(int i, String bmw, String black, String number) {
+    }
+
 }
 
