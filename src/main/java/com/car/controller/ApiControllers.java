@@ -1,6 +1,6 @@
 package com.car.controller;
 
-import com.car.dto.CarDtoRequest;
+import com.car.entity.dto.CarDtoRequest;
 import com.car.entity.Car;
 import com.car.service.impl.CarService;
 import org.springframework.beans.factory.annotation.Autowired;

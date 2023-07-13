@@ -1,4 +1,4 @@
-package com.car.dto;
+package com.car.entity.dto;
 
 import jakarta.persistence.Table;
 import lombok.*;
@@ -7,11 +7,10 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "car")
-public class CarDtoResponse {
+public class CarDtoRequest {
     private long idChassi;
     private String name;
     private String brand;
     private String color;
     private String fabricationYear;
 }
-

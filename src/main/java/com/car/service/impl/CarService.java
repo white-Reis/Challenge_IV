@@ -1,7 +1,7 @@
 package com.car.service.impl;
 
-import com.car.dto.CarDtoRequest;
-import com.car.dto.CarDtoResponse;
+import com.car.entity.dto.CarDtoRequest;
+import com.car.entity.dto.CarDtoResponse;
 import com.car.entity.Car;
 import com.car.repository.CarRepo;
 import com.car.service.exceptions.ObjectNotFoundException;
