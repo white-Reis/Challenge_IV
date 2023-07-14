@@ -17,7 +17,7 @@ public class LocalConfig {
     private CarRepo carRepo;
     @Bean
     public void startDB(){
-        Car car = new Car(12345,"mustang", "ford", "purple", "2022");
+        Car car = new Car(12345,"mustang", "Ford", "purple", "2022");
         carRepo.saveAll(List.of(car));
 
     }
