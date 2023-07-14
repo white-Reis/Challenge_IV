@@ -22,9 +22,9 @@ public class ApiControllers {
 
     @Autowired
     private CarService carService;
+
     @Autowired
     private ModelMapper mapper;
-
 
     @PostMapping(value = "/post")
     public ResponseEntity<?> createCar(@RequestBody @Valid CarDto carDto, BindingResult bindingResult) {
@@ -39,8 +39,8 @@ public class ApiControllers {
         URI url = ServletUriComponentsBuilder
                 .fromCurrentRequest().replacePath("/get/{id}").buildAndExpand(carService.createCar(carDto).getIdChassi()).toUri();
         return ResponseEntity.created(url).build();
-
     }
+
     @GetMapping(value = "/get/{chassi}")
     public ResponseEntity<CarDto> getCar(@PathVariable Long chassi) {
         return ResponseEntity.ok().body(mapper.map(carService.findCar(chassi), CarDto.class));

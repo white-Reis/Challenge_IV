@@ -2,17 +2,17 @@ package com.car.entity.car.dto;
 
 import com.car.validation.CarBrand.AllowedBrand;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.NonNull;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class CarDto {
 
-    @NonNull
+    @NotNull
     private long idChassi;
 
     @NotEmpty(message = "Name field is required")
@@ -25,6 +25,6 @@ public class CarDto {
     @NotEmpty(message = "Color field is required")
     private String color;
 
-    @NotEmpty(message = "Favrucation yearfield is required")
+    @NotEmpty(message = "Fabrication year field is required")
     private String fabricationYear;
 }

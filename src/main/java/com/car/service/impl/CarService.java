@@ -18,7 +18,7 @@ public class CarService {
     private ModelMapper mapper;
 
     @Autowired
-    CarRepo carRepo;
+    private CarRepo carRepo;
 
     public Car createCar(CarDto carDtoRequest) {
         Optional<Car> car = carRepo.findById(carDtoRequest.getIdChassi());
