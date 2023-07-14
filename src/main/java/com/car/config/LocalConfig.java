@@ -1,6 +1,6 @@
 package com.car.config;
 
-import com.car.entity.Car;
+import com.car.entity.car.Car;
 import com.car.repository.CarRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

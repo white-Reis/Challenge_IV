@@ -1,4 +1,4 @@
-package com.car.entity;
+package com.car.entity.car;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -10,16 +10,16 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "car")
+@Table(name = "db_car")
 public class Car {
     @Id
-    @Column(name = "id_Chassi",unique = true)
+    @Column(name = "id_Chassi",unique = true,nullable = false)
     private long idChassi;
 
     @Column(name = "name",nullable = false)
     private String name;
 
-    @Column(name = "brand",nullable = false)
+    @Column(name = "brand")
     private String brand;
 
     @Column(name = "color",nullable = false)
@@ -27,9 +27,6 @@ public class Car {
 
     @Column(name = "fabrication_Year",nullable = false)
     private String fabricationYear;
-
-    public Car(int i, String bmw, String black, String number) {
-    }
 
 }
 
