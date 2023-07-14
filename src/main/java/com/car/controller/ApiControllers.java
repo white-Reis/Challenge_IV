@@ -37,7 +37,7 @@ public class ApiControllers {
             throw new DataIntegratyViolationException(errorMessages.toString());
         }
         URI url = ServletUriComponentsBuilder
-                .fromCurrentRequest().replacePath("/get/{id}").buildAndExpand(carService.createCar(carDto).getIdChassi()).toUri();
+                .fromCurrentRequest().replacePath("car/get/{id}").buildAndExpand(carService.createCar(carDto).getIdChassi()).toUri();
         return ResponseEntity.created(url).build();
     }
 

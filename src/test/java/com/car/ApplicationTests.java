@@ -1,6 +1,5 @@
-package com.car.challenge_iv;
+package com.car;
 
-import com.car.ChallengeIvApplication;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
