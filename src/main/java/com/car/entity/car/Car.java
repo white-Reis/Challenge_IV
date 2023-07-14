@@ -19,7 +19,7 @@ public class Car {
     @Column(name = "name",nullable = false)
     private String name;
 
-    @Column(name = "brand")
+    @Column(name = "brand",nullable = false)
     private String brand;
 
     @Column(name = "color",nullable = false)
