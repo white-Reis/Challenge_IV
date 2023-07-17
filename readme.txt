@@ -4,12 +4,13 @@ the API consists of creating a car using chassis, name, brand, color, and year, 
 invalid fields and for brands that are different from "Ford,Chevrolet,BMW,Volvo" and return them using the 
 chassis as ID.
 
+*application testing:
+1 - run the command "mvn clean test jacoco:report"
+
 *installation and run:
 1 - run the command "mvn clean install"
 2 - run the command "mvn spring-boot:run"
 
-*application testing:
-1 - run the command "mvn clean test jacoco:report"
 
 *routes:
 create car - http//localhost:8080/car/post
